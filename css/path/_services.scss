@@ -1,0 +1,29 @@
+.services{
+    background: $lightbg;
+
+    .box-container{
+        @include grid(30rem);
+
+        .box{
+            background-color: $white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: $boxshadow;
+            border-radius: .5rem;
+            img{
+                margin: 1rem 0;
+                height: 4rem;
+            }
+            h3{
+                font-size: 2rem;
+                padding: 1rem 0;
+                color: $black;
+            }
+            p{
+                font-size: 1.5rem;
+                color: $lightcolor;
+                line-height: 2;
+            }
+        }
+    }
+}

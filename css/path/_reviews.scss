@@ -1,0 +1,45 @@
+.reviews{
+    background: $lightbg;
+    .box-container{
+        @include grid(30rem);
+        .box{
+            background: $white;
+            text-align: center;
+            border-radius: .5rem;
+            box-shadow: $boxshadow;
+            padding: 2rem;
+            img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+            }
+
+            p{
+                font-size: 1.5rem;
+                line-height: 2;
+                padding: 2rem 0;
+                color: $lightcolor;
+                margin-bottom: 0;
+            }
+            .stars{
+                padding: 0.5rem 1.5rem;
+                border-radius: .5rem;
+                background-color: $lightbg;
+                margin-bottom: 2rem;
+                display: inline-block;
+                i{
+                    font-size: 1.5rem;
+                    color: $blue;
+                }
+            }
+            h3{
+                font-size: 2rem;
+                color: $black;
+            }
+            span{
+                font-size: 1.5rem;
+                color: $lightcolor;
+            }
+        }
+    }
+}

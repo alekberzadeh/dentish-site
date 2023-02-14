@@ -1,0 +1,26 @@
+.home {
+    background: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        .row {
+            .content {
+                width: 55rem;
+                padding: 2rem;
+
+                h3 {
+                    font-size: 6rem;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+                p {
+                    line-height: 2;
+                    font-size: 1.5rem;
+                    color: $lightcolor;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

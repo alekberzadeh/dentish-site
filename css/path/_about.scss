@@ -1,0 +1,24 @@
+.about{
+    .container{
+        .row{
+            min-height: 50vh;
+            .content{
+                span{
+                    font-size: 2rem;
+                    color: $blue;
+                }
+                h3{
+                    font-size: 3rem;
+                    color: $black;
+                    margin-top: 1rem;
+                }
+                p {
+                    line-height: 2;
+                    font-size: 1.4rem;
+                    color: $lightcolor;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$blue: #00b8b8;
+$black: #333;
+$white: #fff;
+$lightcolor: #666;
+$lightbg: #eee;
+$border: 0.2rem solid rgba(0, 0, 0, 0.1);
+$boxshadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+
+    // --------------> @include grid(29rem);
+}

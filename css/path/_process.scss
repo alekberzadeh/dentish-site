@@ -1,0 +1,27 @@
+.process {
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            background-color: $blue;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: $boxshadow;
+            img {
+                height: 20rem;
+                margin: 1rem 0;
+            }
+            h3 {
+                font-size: 2rem;
+                color: $white;
+                margin: 1.5rem 0;
+            }
+            p {
+                font-size: 1.5rem;
+                color: var(--white);
+                line-height: 2;
+            }
+        }
+    }
+}

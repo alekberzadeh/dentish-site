@@ -1,0 +1,52 @@
+@mixin gridd($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 3rem;
+
+    // --------------> @include grid(29rem);
+}
+
+.footer {
+    background-color: $lightbg;
+
+    .box-container {
+        @include gridd(25rem);
+
+        .box {
+            text-align: center;
+
+            i {
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+                line-height: 5rem;
+                font-size: 2rem;
+                background-color: $blue;
+                color: $white;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin: 2rem 0;
+                color: $black;
+            }
+            p {
+                font-size: 1.5rem;
+                color: $lightcolor;
+                text-transform: none;
+            }
+        }
+    }
+
+    .credit {
+        text-align: center;
+        font-size: 2rem;
+        color: $lightcolor;
+        border-top: $border;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        span {
+            color: $blue;
+        }
+    }
+}
